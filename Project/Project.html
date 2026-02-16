@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN PAGE -->
+<section id="login" class="page">
+    <div class="login-box">
+        <h1>NETFLIX</h1>
+        <input type="text" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <a href="#profile"><button>Sign In</button></a>
+    </div>
+</section>
+
+<!-- PROFILE PAGE -->
+<section id="profile" class="page">
+    <h1 class="center">Who's Watching?</h1>
+    <div class="profiles">
+        <a href="#home">
+            <div class="profile-card">
+                <img src="https://i.pravatar.cc/150?img=3">
+                <p>Rahul</p>
+            </div>
+        </a>
+        <a href="#home">
+            <div class="profile-card">
+                <img src="https://i.pravatar.cc/150?img=5">
+                <p>Kids</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- HOME PAGE -->
+<section id="home" class="page">
+
+    <div class="navbar">
+        <div class="logo">NETFLIX</div>
+        <a href="#login" class="logout">Logout</a>
+    </div>
+
+    <div class="banner">
+        <div>
+            <h1>Stranger Things</h1>
+            <p>Supernatural mystery in a small town.</p>
+            <br>
+            <a href="#watch"><button class="play-btn">▶ Play</button></a>
+        </div>
+    </div>
+
+    <div class="row">
+        <h2>Trending Now</h2>
+        <div class="row-posters">
+            <img src="https://image.tmdb.org/t/p/w500/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg">
+            <img src="https://image.tmdb.org/t/p/w500/34nDCQZwaEvsy4CFO5hkGRFDCVU.jpg">
+            <img src="https://image.tmdb.org/t/p/w500/5GA3vV1aWWHTSDO5eno8V5zDo8r.jpg">
+            <img src="https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg">
+        </div>
+    </div>
+
+</section>
+
+<!-- WATCH PAGE -->
+<section id="watch" class="page">
+    <div class="video-container">
+        <h1>Now Playing</h1>
+        <div class="fake-video">🎬 Video Player UI</div>
+        <a href="#home"><button class="back-btn">Back</button></a>
+    </div>
+</section>
+
+</body>
+</html>

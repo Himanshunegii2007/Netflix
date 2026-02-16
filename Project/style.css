@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:black;
+    color:white;
+}
+
+/* Hide all pages */
+.page{
+    display:none;
+    min-height:100vh;
+    padding:40px;
+}
+
+/* Show selected page */
+#login:target,
+#profile:target,
+#home:target,
+#watch:target{
+    display:block;
+}
+
+/* Default page */
+#login{
+    display:block;
+}
+
+/* Center text */
+.center{
+    text-align:center;
+}
+
+/* LOGIN */
+
+.login-box{
+    background:rgba(0,0,0,0.8);
+    padding:40px;
+    width:300px;
+    margin:150px auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.login-box h1{
+    color:#e50914;
+    text-align:center;
+}
+
+.login-box input{
+    padding:10px;
+    border:none;
+}
+
+.login-box button{
+    padding:10px;
+    background:#e50914;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+/* PROFILE */
+
+.profiles{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:80px;
+}
+
+.profile-card{
+    text-align:center;
+    cursor:pointer;
+}
+
+.profile-card img{
+    width:120px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.profile-card img:hover{
+    transform:scale(1.1);
+}
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 50px;
+}
+
+.logo{
+    color:#e50914;
+    font-size:2rem;
+    font-weight:bold;
+}
+
+.logout{
+    color:white;
+    text-decoration:none;
+}
+
+/* BANNER */
+
+.banner{
+    height:80vh;
+    background:linear-gradient(to top, black, transparent),
+    url("https://image.tmdb.org/t/p/original/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg") no-repeat center/cover;
+    display:flex;
+    align-items:center;
+    padding-left:60px;
+}
+
+/* BUTTONS */
+
+.play-btn,
+.back-btn{
+    padding:10px 20px;
+    background:white;
+    border:none;
+    cursor:pointer;
+}
+
+/* MOVIE ROW */
+
+.row{
+    padding:40px 50px;
+}
+
+.row-posters{
+    display:flex;
+    gap:10px;
+    overflow-x:auto;
+}
+
+.row-posters img{
+    width:180px;
+    transition:0.3s;
+}
+
+.row-posters img:hover{
+    transform:scale(1.1);
+}
+
+/* WATCH PAGE */
+
+.video-container{
+    text-align:center;
+    margin-top:150px;
+}
+
+.fake-video{
+    width:600px;
+    height:350px;
+    background:#222;
+    margin:20px auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
